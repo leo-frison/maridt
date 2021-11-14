@@ -6,6 +6,10 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -18,15 +22,18 @@
             <nav class="nav bd-grid">
                 <div>
                    <img src="assets/img/logo.svg" alt="">
-             </div>
-
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Quienes Somos?</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Cultivos</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Outlet</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">Quienes Somos?</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Cultivos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Tienda</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#shirts">Remeras</a>
+                              <a class="dropdown-item" href="#pikapika">Picadores</a>
+                              <a class="dropdown-item" href="#seeds">Semillas</a></div>
+                        </li>
                     </ul>
                 </div>
 
@@ -39,9 +46,7 @@
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home" id="home">
-                <div class="home__container bd-grid">
                     <img src="assets/img/perfil.png" alt="" class="home__img"> 
-                </div>
             </section>
             <!--===== ABOUT =====-->
             <section class="about section" id="about">
@@ -92,8 +97,8 @@
             </section>
 
             <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Outlet</h2>
+            <section class="portfolio section" id="shirts">
+                <h2 class="section-title">Remeras</h2>
 
                 <div class="portfolio__container bd-grid">
                     <div class="portfolio__img">
@@ -140,34 +145,17 @@
                 </div>
             </section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contacto</h2>
+            <section class="portfolio section" id="pikapika">
+                <h2 class="section-title">Picadores</h2>
 
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">info.mail.com</span>
-
-                        <h3 class="contact__subtitle">Telefono</h3>
-                        <span class="contact__text">+20 999-999</span>
-
-                        <h3 class="contact__subtitle">Direccion</h3>
-                        <span class="contact__text">Ciudad</span>
-                    </div>
-
-                    <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Nombre" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Enviar" class="contact__button">
-                    </form>
-                </div>
             </section>
+
+            <section class="portfolio section" id="seeds">
+                <h2 class="section-title">Semillas</h2>
+
+         
+            </section>
+
         </main>
 
         <!--===== FOOTER =====-->
@@ -184,7 +172,6 @@
                         <li><a href="#home" class="footer__link">Inicio</a></li>
                         <li><a href="#about" class="footer__link">Quienes Somos?</a></li>
                         <li><a href="#skills" class="footer__link">Tienda</a></li>
-                        <li><a href="#Contact" class="footer__link">Contacto</a></li>
                     </ul>
                 </div>
                 
