@@ -344,6 +344,7 @@ img{
     }
     .nav__list{
         display: flex;
+        margin-left: 75px;
     }
     .nav-item{
         margin-left: var(--mb-4);
