@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio responsive complete</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#"><img src="assets/img/logo.svg" alt="" class="nav__logo"></a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="dropdown">
+              <a href="#home" class="nav__link active">TIENDA</a>
+              <div class="dropdown-item">
+                <a href="http://localhost:3001/">Remeras</a>
+                <a href="http://localhost:3001/">Picadores</a>
+                <a href="http://localhost:3001/">Semillas</a>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">BLOG</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">CARRITO</a>
+            </li>
+          </ul>
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+          <a href="#"><i class="bx bxl-twitch"></i></a>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="slider">
+            <div class="item-wrapper">
+              <img src="/assets/img/perfil.png" />
+            </div>
+            <div class="button-wrapper">
+              <button class="btn" id="next">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="btn" id="previous">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="indicator-wrapper"></div>
+          </div>
+      </section>
+   </main>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
